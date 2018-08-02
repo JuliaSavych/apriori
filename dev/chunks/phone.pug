@@ -1,0 +1,16 @@
+-
+  var phones = [
+  {
+    telCode: '(351)',
+    tel:' 223-53-17',
+    href: "tel:"
+  },
+  {
+    telCode: '(351)',
+    tel:' 223-53-16',
+    href: "tel:"
+  }
+  ]
+each item in phones
+  a(href=item.href+item.telCode+item.tel).phones=item.telCode
+    span=item.tel

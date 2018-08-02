@@ -15,7 +15,10 @@ gulp.task('jsCopy', function(){
   gulp.src('./dev/js/*')
   .pipe(gulp.dest('./app/js/'))
 })
-
+gulp.task('fontsCopy', function(){
+  gulp.src('./dev/fonts/*')
+  .pipe(gulp.dest('./app/fonts/'))
+})
 gulp.task('webserver', function() {
   gulp.src('app')
     .pipe(server({
@@ -56,4 +59,4 @@ gulp.task('watch',function(){
 })
 
 
-gulp.task('default',['html','watch','css','jsCopy','webserver','imgCopy'])
+gulp.task('default',['html','watch','css','jsCopy','webserver','imgCopy','fontsCopy'])
