@@ -1,0 +1,10 @@
+a.phones{
+  text-decoration: none;
+  color: $utra-dark-gray;
+  font-size: 17px;
+  & span{
+    color: #000000;
+    font-weight: bold;
+    font-size: 26px;
+  }
+}
