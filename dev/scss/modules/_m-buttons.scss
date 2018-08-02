@@ -1,8 +1,7 @@
-button.button {
+.button {
 	border: none;
 	text-align: center;
 	width: 277px;
-	margin-bottom: 65px;
 	z-index: 1;
 	a {
 		display: block;
@@ -14,6 +13,16 @@ button.button {
 		text-transform: uppercase;
 	}
 }
+.buttons{
+	margin-bottom: 65px;
+	display: flex;
+	justify-content: center;
+	flex-direction: column; 
+	align-items: center;
+	@include breakpoint(sm) {
+		flex-direction: initial;
+	}
+}
 
 .button_pink {
 	background: $pink;
@@ -21,5 +30,4 @@ button.button {
 
 .button_blue {
 	background: $light-blue;
-	margin-left: -4px;
 }
