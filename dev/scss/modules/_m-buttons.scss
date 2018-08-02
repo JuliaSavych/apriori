@@ -1,0 +1,23 @@
+button.button {
+	border: none;
+	text-align: center;
+	width: 277px;
+	a {
+		display: block;
+		font-family: $main-font-family, sans-serif;
+		font-size: 31px;
+		font-weight: 700;
+		padding: 22px 0;
+		color: $white;
+		text-transform: uppercase;
+	}
+}
+
+.button_pink {
+	background: $pink;
+}
+
+.button_blue {
+	background: $light-blue;
+	margin-left: -4px;
+}
