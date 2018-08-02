@@ -1,0 +1,36 @@
+.form-wrap {
+	background: $grey-bg;
+	padding-top: 70px;
+	padding-bottom: 45px;
+}
+
+.form {
+	display: flex;
+	justify-content: space-between;
+	form {
+		input {
+			padding-left: 17px;
+			font-size: 22px;
+			font-weight: 400;
+			font-family: $main-font-family, sans-serif;
+			background: $white;
+			border: 1px solid $form-border-color;
+			width: 285px;
+			height: 49px;
+			margin-right: 45px;
+			color: #c0c0c0;
+		}
+		button {
+			background-color: $gren;
+			width: 285px;
+			text-transform: uppercase;
+			border: 1px solid $form-border-color;
+			text-align: center;
+			font-size: 24px;
+			font-family: $main-font-family, sans-serif;
+			color: $white;
+			height: 66px;
+			cursor: pointer;
+		}
+	}
+}

@@ -1,0 +1,14 @@
+.form-wrap
+	.wrapper
+		.form
+			form(actions="/", method="GET")
+				input(type="text" 
+					placeholder="Имя..."
+					minlength=2
+					required
+					name="name")
+				input(type="tel" 
+					placeholder="Телефон..."
+					required
+					tel="tel")
+				button.button(type="submit") ОСТАВИТЬ ЗАЯВКУ
