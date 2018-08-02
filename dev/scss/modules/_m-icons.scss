@@ -1,0 +1,22 @@
+.icon-holder {
+	&>* {
+		display: inline-block;
+	}
+
+}
+
+.icon {
+	cursor: pointer;
+	text-align: center;
+	padding-top: 6px;
+	background: $white;
+	border-radius: 50%;
+	width: 45px;
+	height: 45px;
+	a {
+		color: $icon-color-gren;
+		font-family: $main-font-family, sans-serif;
+		font-weight: 700;
+		font-size: 30px;
+	}
+}
