@@ -2,6 +2,8 @@ button.button {
 	border: none;
 	text-align: center;
 	width: 277px;
+	margin-bottom: 65px;
+	z-index: 1;
 	a {
 		display: block;
 		font-family: $main-font-family, sans-serif;
