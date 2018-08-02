@@ -1,16 +1,71 @@
-.header{
-  background-image: url("../img/header-background.png");
+.header {
+  padding: 20px 0;
+	&>.wrapper{
+		display: flex;
+		flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+		@include breakpoint(xs) {
+			justify-content: center;
+		}
+		@include breakpoint(sm) {
+			justify-content: center;
+		}
+		@include breakpoint(md) {
+			justify-content: space-between;
+		}
+	}
+}
+.contacts {
 	display: flex;
 	justify-content: space-between;
-	padding: 20px 0;
-  position: relative;
-  &:after{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #63b4094d;
-  }
+  align-items:center;
+	@include breakpoint(xs) {
+		justify-content: center;
+		flex-wrap: wrap;
+		&>*{
+			margin-bottom: 15px;
+		}
+	}
+}
+
+.phone {
+	display: flex;
+	justify-content: space-between;
+	&>* {
+		display: inline-block;
+	}
+	a.phones {
+		margin-right: 20px;
+	}
+	@include breakpoint(xs) {
+		justify-content: center;
+		flex-wrap: wrap;
+		&>*{
+			margin-bottom: 15px;
+		}
+	}
+	@include breakpoint(sm) {
+		flex-direction: column;
+	}
+	@include breakpoint(md) {
+		flex-direction: row;
+	}
+}
+
+a.logo {
+	display: block;
+	margin-bottom: 0;
+  font-size: 0;
+	@include breakpoint(xs) {
+		margin-bottom: 15px;
+	}
+	@include breakpoint(sm) {
+		padding: 0 15px;
+	}
+}
+
+.address {
+  font-size: 18px;
+  color: $utra-dark-gray;
 }
