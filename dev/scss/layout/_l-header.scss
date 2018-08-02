@@ -1,5 +1,70 @@
 .header {
+	&>.wrapper{
+		display: flex;
+		padding: 20px 0;
+		flex-wrap: wrap;
+		@include breakpoint(xs) {
+			justify-content: center;
+		}
+		@include breakpoint(sm) {
+			padding: 20px 15px;
+			justify-content: center;
+		}
+		@include breakpoint(md) {
+			justify-content: space-between;
+		}
+	}
+}
+.contacts {
 	display: flex;
 	justify-content: space-between;
-	padding: 20px 0;
+	@include breakpoint(xs) {
+		justify-content: center;
+		flex-wrap: wrap;
+		&>*{
+			margin-bottom: 15px;
+		}
+	}
+}
+
+.phone {
+	display: flex;
+	justify-content: space-between;
+	&>* {
+		display: inline-block;
+	}
+	a.phones {
+		margin-right: 20px;
+	}
+	@include breakpoint(xs) {
+		justify-content: center;
+		flex-wrap: wrap;
+		&>*{
+			margin-bottom: 15px;
+		}
+	}
+	@include breakpoint(sm) {
+		flex-direction: column;
+	}
+	@include breakpoint(md) {
+		flex-direction: row;
+	}
+}
+
+.logo {
+	a {
+		display: block;
+	}
+	margin-bottom: 0;
+	@include breakpoint(xs) {
+		margin-bottom: 15px;
+	}
+	@include breakpoint(sm) {
+		padding: 0 15px;
+	}
+}
+
+.address {
+  font-size: 18px;
+  color: $utra-dark-gray;
 }
