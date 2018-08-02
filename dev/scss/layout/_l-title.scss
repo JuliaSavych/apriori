@@ -1,12 +1,13 @@
 .title{
   font-size: 41px;
   font-weight: 700;
-  line-height: 20px;
   text-transform: uppercase;
   text-align: center;
-  padding-top: 53px;
-  padding-bottom: 79px;
+  margin-bottom: 50px;
   span{
     color: $pink;
+  }
+  &__block{
+    font-size: 31px;
   }
 }
