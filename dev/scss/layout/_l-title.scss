@@ -1,12 +1,19 @@
 .title{
   font-size: 41px;
-  font-weight: 700;
-  line-height: 20px;
+  font-weight: bold;
   text-transform: uppercase;
   text-align: center;
-  padding-top: 53px;
-  padding-bottom: 79px;
+  margin-bottom: 50px;
   span{
     color: $pink;
   }
+
 }
+.title.title__block{
+    font-size: 31px;
+    text-align: left;
+    margin-bottom: 35px;
+  }
+.article{
+  text-align: left;
+}  
