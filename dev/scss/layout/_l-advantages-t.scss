@@ -35,17 +35,67 @@
 .advatages-info{
 
 }
-.advatage{
+.advantage{
+  font-size: 26px;
+  font-weight: bold;
+  color: $text-dark;
   &__title{
+    height: 110px;
+    position: relative;
+    padding-bottom: $ofsets;
+    border-bottom: 1px solid $advantsges-border-tex-color;
     & span{
-      color: $light-blue;
-      font-size: 77.9px;
+    font-weight: bold;
+    color: $light-blue;
     }
-    & span:nth-child(2){
-
+    & p{
+      display: inline-block;
+      position: relative;
+      left: 0;
+      top: -18px;
+      padding-right: 30px;
+    }
+    & span:nth-child(5){
+      position: absolute;
+      color: $pink;
+      font-size:92px;
+      top: -4px;
+      left: 156px
     }
   }
   &__text{
-
+    font-size: 18px;
+    font-weight: normal;
+    color: $advantsges-border-tex-color;
+  }
+ 
+}
+.advantage__title-first{
+  & span{
+    font-size: 65px;
+    top: 35px;
+    left: -2px;  
+  }
+}
+.advantage__title-second{
+  font-size: 28px;
+  & span{
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 59px;
+  }
+  & p{
+    position: initial;
+    padding-right: 10px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+.advantage__title-third{
+  & span{
+    text-transform: uppercase;
+    font-size: 47px;
+    top: -8px;
+    left: -2px;  
   }
 }
