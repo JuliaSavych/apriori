@@ -1,13 +1,19 @@
 .title{
   font-size: 41px;
-  font-weight: 700;
+  font-weight: bold;
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 50px;
   span{
     color: $pink;
   }
-  &__block{
-    font-size: 31px;
-  }
+
 }
+.title.title__block{
+    font-size: 31px;
+    text-align: left;
+    margin-bottom: 35px;
+  }
+.article{
+  text-align: left;
+}  

@@ -1,0 +1,29 @@
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+.sprite-articles {
+    width: 34px;
+    height: 26px;
+    background-position: -5px -5px;
+}
+
+.sprite-mail {
+    width: 37px;
+    height: 27px;
+    background-position: -5px -41px;
+}
+
+.sprite-price {
+    width: 23px;
+    height: 32px;
+    background-position: -52px -5px;
+}
+
+.sprite-reviews {
+    width: 48px;
+    height: 39px;
+    background-position: -85px -5px;
+}
