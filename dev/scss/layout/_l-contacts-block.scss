@@ -1,0 +1,45 @@
+.contacts-block-background{
+  overflow: hidden;
+}
+.contacts-block{
+  padding-top: 22px;
+  padding-bottom: 27px;
+  padding-right: 30px;
+  width: 50%;
+  background: $gren;
+  position: relative;
+  z-index: 3;
+  &:before{
+    content: '';
+    width: 100vw;
+    display: block;
+    background: $gren;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 100%;
+    z-index: 1;
+  }
+}
+.contacts-block-phone, .contacts-block-address,   .contacts-block-time{
+  padding-bottom: 22px;
+  margin-top: 27px;
+  border-bottom: 1px solid #90ce50;
+}
+.map{
+  width: 100%;
+  height: 750px;
+  background: gray;
+  z-index: 1;
+  &_wrapp{
+    position: relative;
+  }
+  &_overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 3;
+  }
+}

@@ -1,0 +1,52 @@
+.promo{
+  display: flex;
+  &:before{
+    content: '';
+    background-color: $pink;
+    height: 83px;
+    width: 690px;
+    display: block;
+    position: absolute; 
+    top: -9px;
+    right: 100%;
+    }
+  &:after{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0px;
+    background-color: $light-blue;
+    height: 65px;
+    width: 1920px;
+    left: 100%;
+   
+  }
+  &__right{
+    color: $text-dark;
+    display: flex;
+    align-items: content;
+    background-color: $light-blue;
+    height: 65px;
+    font-size: 17px;
+    font-weight: bold;
+    width: 75%;
+    padding: 15px 0;
+  }
+  & span{
+    color:$white; 
+    font-size: 14px;
+  }
+  &__left{
+    position: relative;
+    background-color: $pink;
+    height: 83px;
+    width: 690px;
+    font-size: 47px;
+    font-weight: bold;
+    color: $white;
+    text-align: right;
+    width: 25%;
+    top:-9px;
+    padding: 15px 28px 15px 0px;
+  }
+}
