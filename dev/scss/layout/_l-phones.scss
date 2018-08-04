@@ -8,3 +8,14 @@ a.phones{
     font-size: 26px;
   }
 }
+.contacts-block-phone{
+  a.phones{
+    padding-right: 30px;
+    font-size: 19px;
+    color:#000;
+    span{
+      color: $white;
+      font-size: 30px;
+    }
+  }
+}
