@@ -20,7 +20,15 @@ $('[data-fancybox="images"]').fancybox({
   image: {
       preload: true
   },
-  transitionEffect: "fade"
+  transitionEffect: "fade",
+  toolbar: "auto",
+  buttons: [
+        "share",
+        "fullScreen",
+        "download",
+        "thumbs",
+        "close"
+    ]
 });
 
   if($('#map').length){
