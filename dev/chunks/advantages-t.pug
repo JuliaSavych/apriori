@@ -1,7 +1,6 @@
 .wrapper
-  //- include advantage  
-  .advantages
-    ul
+  include advantage  
+  .advantages-list
       -
         var advantages = [
           {
@@ -36,10 +35,9 @@
           }
         ]
       each item in advantages
-        li.col-mobile-1-1.col-phablet-1-2.col-desktop-1-3
-          div
-            a(href=item.id)
-              .advantages__img            
-                img(src=item.img, alt="")
+        .col-mobile-1-1.col-phablet-1-2.col-desktop-1-3.col-desktop-full-1-6
+          a(href=item.id).advantages
+            .advantages__img            
+              img(src=item.img, alt="")
             .advantages__text=item.text 
 

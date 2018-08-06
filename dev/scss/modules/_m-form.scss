@@ -5,9 +5,21 @@
 }
 
 .form {
-	display: flex;
-	justify-content: space-between;
 	form {
+		display: flex;
+		justify-content: space-between;
+			@include breakpoint(xs) {
+				justify-content: center;
+				flex-direction: column;
+			}
+			@include breakpoint(sm) {
+				justify-content: space-around;
+				flex-wrap: wrap;
+			}
+			@include breakpoint(md) {
+				align-items: center;
+				flex-wrap: nowrap;
+			}
 		input {
 			padding-left: 17px;
 			font-size: 22px;
@@ -15,14 +27,25 @@
 			font-family: $main-font-family, sans-serif;
 			background: $white;
 			border: 1px solid $form-border-color;
-			width: 285px;
 			height: 49px;
 			margin-right: 45px;
 			color: #c0c0c0;
+			@include breakpoint(xs) {
+				margin-right: 0;
+				margin-bottom: 15px;
+			}
+			@include breakpoint(sm) {
+				margin-right: 0;
+				margin-bottom: 15px;
+			}
+			@include breakpoint(md) {
+				margin-bottom: 0;
+				margin-right: 15px;
+			}
+
 		}
 		button {
 			background-color: $gren;
-			width: 285px;
 			text-transform: uppercase;
 			border: 1px solid $form-border-color;
 			text-align: center;

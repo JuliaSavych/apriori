@@ -2,13 +2,15 @@
   overflow: hidden;
 }
 .contacts-block{
-  padding-top: 22px;
+  padding-top: 12px;
   padding-bottom: 27px;
   padding-right: 30px;
   width: 50%;
   background: $gren;
   position: relative;
   z-index: 3;
+  margin-top: 180px;
+  float: left;
   &:before{
     content: '';
     width: 100vw;
@@ -25,6 +27,26 @@
   padding-bottom: 22px;
   margin-top: 27px;
   border-bottom: 1px solid #90ce50;
+}
+
+.contacts-block-logo{
+  margin-top: 195px;
+  position: relative;
+  float:right;
+  text-align: center;
+  z-index: 3;
+   width: 290px;
+   height: 180px;
+   background: rgba(255, 255, 255, 0.69);
+   border-radius: 10px;
+   border: 5px solid rgba(255, 255, 255, 0.38);
+  a.logo{
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 }
 .map{
   width: 100%;
