@@ -3,27 +3,7 @@
   {
     display: flex;
     height: 65px
-  }
-  &:before{
-    content: '';
-    background-color: $pink;
-    height: 83px;
-    width: 100vw;
-    display: block;
-    position: absolute; 
-    top: -9px;
-    right: 100%;
-    }
-  &:after{
-    content: '';
-    display: block;
-    position: absolute;
-    top: 0px;
-    background-color: $light-blue;
-    height: 65px;
-    width: 100vw;
-    left: 100%;
-  }
+  } 
   &__right{
     color: $text-dark;
     background-color: $light-blue;
@@ -32,10 +12,21 @@
     text-align: center;
     padding: 12px 10px;
     display: flex;
+    align-items: center;
     @include breakpoint (md)
     {
       height: 65px;
       width: 75%;
+    }
+    &:before{
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0px;
+      background-color: $light-blue;
+      height: 65px;
+      width: 100vw;
+      left: 100%;
     }
   }
   & span{
@@ -60,5 +51,18 @@
       top:-9px;
       padding: 15px 28px 15px 0px;
     }
+    &:before{
+      content: '';
+      background-color: $pink;
+      height: 83px;
+      width: 100vw;
+      display: block;
+      position: absolute; 
+      top: 0px;
+      right: 100%;
+    }
   }
+}
+.promo-wrap{
+ 
 }

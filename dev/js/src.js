@@ -13,7 +13,23 @@ $( document ).ready(function() {
     });
   }
 
-
+$('[data-fancybox="images"]').fancybox({
+   thumbs : {
+    autoStart : true
+  },
+  image: {
+      preload: true
+  },
+  transitionEffect: "fade",
+  toolbar: "auto",
+  buttons: [
+        "share",
+        "fullScreen",
+        "download",
+        "thumbs",
+        "close"
+    ]
+});
 
   if($('#map').length){
     var mapPosition = new google.maps.LatLng(-33.91722, 151.23064);
