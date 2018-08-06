@@ -2,7 +2,10 @@
     position: relative;
     max-width: 960px;
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 0 $ofsets;
+}
+.row{
+  margin: 0 $ofsets*-1;
 }
 
 @include breakpoint (xs) {
