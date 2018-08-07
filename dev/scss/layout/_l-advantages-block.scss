@@ -1,3 +1,6 @@
+.advantages-block{
+  z-index: 1;
+}
 .advantages-block-icons  {
   // display: inline-block;
   display: flex;
@@ -6,9 +9,9 @@
   justify-content: space-between;
   align-items: stretch;
   align-content: stretch;
-
   margin-bottom: 140px;
 }
+
 .block-icons{
   // margin-right: 26px;
   text-align: center;
