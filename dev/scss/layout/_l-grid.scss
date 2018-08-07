@@ -2,7 +2,11 @@
     position: relative;
     max-width: 960px;
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 0 $ofsets;
+}
+
+.row{
+  margin: 0 $ofsets*-1;
 }
 
 @include breakpoint (xs) {
@@ -18,8 +22,15 @@
 @include breakpoint (sm) {
   .col-phablet-1-2 {
     display: flex;
-    flex-basis: 50%;
-    max-width: 50%;
+    flex-basis: 48%;
+    max-width: 48%;
+    padding: 0;
+    text-align: center;
+  }
+   .col-phablet-1-1 {
+    display: flex;
+    flex-basis: 100%;
+    max-width: 100%;
     padding: 0;
     text-align: center;
   }
@@ -36,6 +47,14 @@
     flex-basis: 66.66%;
     max-width: 66.66%;
     // justify-content: space-between;
+  }
+  .col-1-2 {
+    display: flex;
+    flex-basis: 48%;
+    max-width: 48%;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    flex-direction: row;
   }
 }
 @include breakpoint (lg){
