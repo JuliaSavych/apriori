@@ -32,8 +32,9 @@
     }
   }
 }
-.advatages-info{
-
+.advantages-info{
+  display: flex;
+  flex-wrap: wrap;
 }
 .advantage{
   font-size: 26px;

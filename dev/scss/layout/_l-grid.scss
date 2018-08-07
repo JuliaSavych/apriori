@@ -57,6 +57,20 @@
     flex-direction: row;
   }
 }
+@include breakpoint (lg) {
+  .col-desktop-48-100 {
+    padding: 10px;
+    flex-basis: 48%;
+    max-width: 48%;
+    // justify-content: space-between;
+  }
+   .col-desktop-52-100 {
+    padding: 10px;
+    flex-basis: 52%;
+    max-width: 52%;
+    // justify-content: space-between;
+  }
+}
 
 $offset: 45px;
 
