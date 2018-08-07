@@ -11,6 +11,9 @@
   z-index: 3;
   margin-top: 180px;
   float: left;
+  @include breakpoint (lg){
+
+  }
   &:before{
     content: '';
     width: 100vw;
@@ -23,6 +26,7 @@
     z-index: 1;
   }
 }
+
 .contacts-block-phone, .contacts-block-address,   .contacts-block-time{
   padding-bottom: 22px;
   margin-top: 27px;
