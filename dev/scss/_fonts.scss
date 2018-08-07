@@ -12,3 +12,15 @@
 
 
 
+.fa-check-circle {
+	color: $white;
+	@include breakpoint(xs) {
+		font-size: 30px;
+	}
+	@include breakpoint(sm) {
+		font-size: 50px;
+	}
+	@include breakpoint(md) {
+		font-size: 60px;
+	}
+}

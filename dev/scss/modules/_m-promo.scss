@@ -1,5 +1,9 @@
 .promo{
-  display: flex;
+  @include breakpoint (md)
+  {
+    display: flex;
+    height: 65px
+  }
   &:before{
     content: '';
     background-color: $pink;
@@ -9,7 +13,8 @@
     position: absolute; 
     top: -9px;
     right: 100%;
-    }
+    z-index: 1;
+  }
   &:after{
     content: '';
     display: block;
@@ -19,18 +24,23 @@
     height: 65px;
     width: 1920px;
     left: 100%;
-   
   }
   &__right{
     color: $text-dark;
-    display: flex;
-    align-items: content;
     background-color: $light-blue;
-    height: 65px;
     font-size: 17px;
     font-weight: bold;
-    width: 75%;
-    padding: 15px 0;
+    text-align: center;
+    padding: 12px 10px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    @include breakpoint (md)
+    {
+      text-align: left;
+      height: 65px;
+      width: 75%;
+    }
   }
   & span{
     color:$white; 
@@ -38,15 +48,26 @@
   }
   &__left{
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: $pink;
-    height: 83px;
-    width: 690px;
-    font-size: 47px;
+    font-size: 40px;
+    text-align: center;
     font-weight: bold;
     color: $white;
-    text-align: right;
-    width: 25%;
-    top:-9px;
-    padding: 15px 28px 15px 0px;
+    z-index: 1;
+    padding: 15px 10px;
+    @include breakpoint (md)
+    {
+      justify-content: start;
+      height: 83px;
+      font-size: 47px;
+      width: 25%;
+      top:-9px;
+      @media (max-width: 840px){
+        font-size: 40px;
+      }
+    }
   }
 }
