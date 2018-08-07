@@ -35,13 +35,13 @@ $('[data-fancybox="gallery-1"]').fancybox({
     var mapPosition = new google.maps.LatLng(-33.91722, 151.23064);
 
     var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 16,
+          zoom: 8,
           center: mapPosition,
         });
 
     var marker = new google.maps.Marker({
       position : mapPosition,
-      icon : '../img/advantages-4.png',
+      icon : '../img/pointer-map.png',
       map : map
     });
   }
