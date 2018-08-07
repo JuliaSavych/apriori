@@ -57,6 +57,13 @@
     flex-direction: row;
   }
 }
+@include breakpoint (lg){
+  .col-desktop-full-1-6{
+    display: flex;
+    flex-basis: 16.66%;
+    max-width: 16.66%;
+  }
+}
 
 $offset: 45px;
 
