@@ -2,9 +2,11 @@
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	padding-left: 25%;
+	@include breakpoint(md) {
+		padding-left: 25%;
+	}
 	a {
-		flex-basis: 25%;
+		// flex-basis: 25%;
 		margin-bottom: 25px;
 	}
 }

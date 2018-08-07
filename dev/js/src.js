@@ -13,7 +13,7 @@ $( document ).ready(function() {
     });
   }
 
-$('[data-fancybox="images"]').fancybox({
+$('[data-fancybox="gallery-1"]').fancybox({
    thumbs : {
     autoStart : true
   },

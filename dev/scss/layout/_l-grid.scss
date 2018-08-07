@@ -32,6 +32,7 @@
     max-width: 50%;  
     min-width: 50%;
     // text-align: center;
+
   }
    .col-phablet-1-1 {
     flex-basis: 100%;
@@ -63,6 +64,9 @@
     // flex-wrap: nowrap;
     // flex-direction: row;
   }
+  .col-1-2 {
+    flex-basis: 50%;
+    max-width: 50%;
 }
 @include breakpoint (lg) {
   .col-desktop-48-100 {
@@ -93,5 +97,3 @@ $offset: 45px;
 .offset {
   padding: $offset 0;
 }
-
-
