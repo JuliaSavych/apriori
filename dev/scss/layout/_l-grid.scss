@@ -22,8 +22,8 @@
 @include breakpoint (sm) {
   .col-phablet-1-2 {
     display: flex;
-    flex-basis: 48%;
-    max-width: 48%;
+    flex-basis: 50%;
+    max-width: 50%;
     padding: 0;
     text-align: center;
   }
@@ -50,12 +50,12 @@
   }
   .col-1-2 {
     display: flex;
-    flex-basis: 48%;
-    max-width: 48%;
+    flex-basis: 50%;
+    max-width: 50%;
     justify-content: space-between;
     flex-wrap: nowrap;
     flex-direction: row;
-  }
+    }
 }
 
 $offset: 45px;
@@ -63,3 +63,4 @@ $offset: 45px;
 .offset {
   padding: $offset 0;
 }
+

@@ -21,6 +21,7 @@
 				flex-wrap: nowrap;
 			}
 		input {
+			width: 100%;
 			padding-left: 17px;
 			font-size: 22px;
 			font-weight: 400;
@@ -53,6 +54,7 @@
 			font-family: $main-font-family, sans-serif;
 			color: $white;
 			height: 66px;
+			width: 100%;
 			cursor: pointer;
 		}
 	}

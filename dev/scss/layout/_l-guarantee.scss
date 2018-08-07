@@ -2,19 +2,18 @@
 	color: $white;
 	position: relative;
 	min-height: 95px;
-	margin-bottom: 15px;
-	cursor: pointer;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	margin-bottom: 20px;
 	@include breakpoint(xs) {
 		font-size: 16px;
-		padding-top: 10px;
 	}
 	@include breakpoint(sm) {
 		font-size: 16px;
-		padding-top: 20px;
 	}
 	@include breakpoint(md) {
 		font-size: 19px;
-		padding-top: 20px;
 	}
 	&:before {
 		@include breakpoint(xs) {
@@ -27,57 +26,6 @@
 			width: 93px;
 		}
 	}
-	&:nth-child(odd) {
-		@include breakpoint(xs) {
-			padding-left: 70px;
-		}
-		@include breakpoint(md) {
-			padding-left: 110px;
-		}
-		background-color: $gren;
-		padding-left: 110px;
-		padding-right: 20px;
-			&:before {
-			content: '';
-			position: absolute;
-			top: 0;
-			left: 0;
-			bottom: 0;
-			background: $neon-gren;
-
-		}
-		&>.guarantee__icon {
-			position: absolute;
-			top: 20%;
-			left: 3%;
-			bottom: 0;
-		}
-	}
-	&:nth-child(even) {
-		background-color: #2e81d9;
-		padding-right: 110px;
-		padding-left: 20px;
-		@include breakpoint(xs) {
-			padding-right: 70px;
-		}
-		@include breakpoint(md) {
-			padding-right: 110px;
-		}
-		&:before {
-			content: '';
-			background: $neon-blue;
-			position: absolute;
-			top: 0;
-			right: 0;
-			bottom: 0;
-		}
-		&>.guarantee__icon {
-			position: absolute;
-			top: 20%;
-			right: 3%;
-			bottom: 0;
-		}
-	}
 	&__info {
 		text-align: left;
 	}
@@ -87,4 +35,63 @@
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
+	&>.col-mobile-1-1, .col-phablet-1-1, .col-1-2 {
+		&:nth-child(odd) .guarantee{
+        @include breakpoint(xs) {
+          padding-left: 70px;
+        }
+        @include breakpoint(md) {
+          padding-left: 110px;
+        }
+        background-color: $gren;
+        padding-left: 110px;
+        padding-right: 20px;
+          &:before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          bottom: 0;
+          background: $neon-gren;
+
+        }
+        &>.guarantee__icon {
+          position: absolute;
+          top: 18px;
+          left: 18px;
+          bottom: 0;
+          	@include breakpoint(xs) {
+          		left: 9px;
+       		}
+        }
+    }
+    &:nth-child(even) .guarantee{
+        background-color: #2e81d9;
+        padding-right: 110px;
+        padding-left: 20px;
+        @include breakpoint(xs) {
+          padding-right: 70px;
+        }
+        @include breakpoint(md) {
+          padding-right: 110px;
+        }
+        &:before {
+          content: '';
+          background: $neon-blue;
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+        }
+        &>.guarantee__icon {
+          position: absolute;
+          top: 18px;
+          right: 18px;
+          bottom: 0;
+          @include breakpoint(xs) {
+          		right: 9px;
+       		}
+        }
+      }
+	}
 }
