@@ -69,13 +69,13 @@
     flex-basis: 52%;
     max-width: 52%;
     // justify-content: space-between;
-
+  }
+}
 @include breakpoint (lg){
   .col-desktop-full-1-6{
     display: flex;
     flex-basis: 16.66%;
     max-width: 16.66%;
-
   }
 }
 
