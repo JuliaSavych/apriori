@@ -57,11 +57,25 @@
     flex-direction: row;
   }
 }
+@include breakpoint (lg) {
+  .col-desktop-48-100 {
+    padding: 10px;
+    flex-basis: 48%;
+    max-width: 48%;
+    // justify-content: space-between;
+  }
+   .col-desktop-52-100 {
+    padding: 10px;
+    flex-basis: 52%;
+    max-width: 52%;
+    // justify-content: space-between;
+
 @include breakpoint (lg){
   .col-desktop-full-1-6{
     display: flex;
     flex-basis: 16.66%;
     max-width: 16.66%;
+
   }
 }
 
