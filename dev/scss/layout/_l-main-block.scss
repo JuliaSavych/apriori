@@ -1,0 +1,96 @@
+.main-block{
+  overflow: hidden;
+  position: relative;
+  &__background{
+    display: none;
+    @include breakpoint(lg){
+      display: block;
+      position: absolute;
+      height: 115%;
+      bottom: 0;
+      width: 52%;
+      background-color: $white;
+    }
+  }
+  &__title{
+    position: relative;
+    color: $white;
+    font-size: 44px;
+    font-weight: bold;
+    text-align: center;
+    border-bottom: 6px solid $white;
+    border-top: 6px solid $white;
+    padding: 30px 30px;
+    margin-bottom: 125px;
+    border-radius: 5px;
+    align-self: start;
+    justify-content: stretch;
+    &:before{
+      display: none;
+      @include breakpoint(lg){
+        display: block;
+        content: '';
+        position: absolute;
+        top: -6px;
+        bottom: -6px;
+        border-bottom: 6px solid $white;
+        border-top: 6px solid $white;
+        width: 100%;
+      }
+    }
+  }
+}
+
+.main-block_blue{
+  background-color: $main-block-blue;
+  & .main-block__background{
+  left: 0;
+  transform-origin: bottom right;
+  transform: rotate(-3.8deg);
+  }
+  & .main-block-wrap{
+    flex-direction: row-reverse;
+  }
+  .main-block__title{
+    border-left: 6px solid $white;
+    border-right: 6px solid $white;
+    @include breakpoint(lg){
+      text-align: left;
+      border-right: none;
+      border-radius: 0;
+      padding-right: 0;
+      margin-left: -15px;
+      &:before{
+        left: 100%;
+      }
+    }
+  }
+}
+
+.main-block_green{
+  & .main-block__background{
+    right: 0;
+    transform-origin: bottom left;
+    transform: rotate(3.8deg);
+  }
+  background-color: $main-block-green;
+  & .main-block__title{
+    border-right: 6px solid $white;
+    border-left: 6px solid $white;
+    @include breakpoint(lg){
+      text-align: right;
+      border-left: none;
+      border-radius: 0;
+      padding-left: 0;
+      margin-right: -15px;
+      &:before{
+        right: 100%;
+      }
+    }
+  }
+}
+.main-block-wrap{
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 10vh;
+}

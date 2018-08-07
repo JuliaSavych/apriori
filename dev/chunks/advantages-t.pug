@@ -1,44 +1,44 @@
 .wrapper
-  .advantages
-    ul
-      -
-        var advantages = [
-          {
-            id: '#design',
-            img : 'img/advantages-1.png',
-            text:'ПРОЕКТИРОВАНИе'
-          }, 
-          {
-            id: '#examination',
-            img:'img/advantages-2.png',
-            text:'Обследование'
-          }, 
-          {
-            id: '#thermal ',
-            img:'img/advantages-3.png',
-            text:'Тепловизионное Обследование'
-          }, 
-          {
-            id: '#design_projects',
-            img:'img/advantages-4.png',
-            text:'Дизайн проекты'
-          }, 
-          {
-            id: '#solar_panels',
-            img:'img/advantages-5.png',
-            text:'Солнечные батареи'
-          }, 
-          {
-            id: '#building',
-            img:'img/advantages-6.png',
-            text:'Строительство'
-          }
-        ]
-      each item in advantages
-        li.col-mobile-1-1.col-phablet-1-2.col-desktop-1-3
-          div
-            a(href=item.id)
+  include advantage
+  .row  
+    .advantages-list
+        -
+          var advantages = [
+            {
+              id: '#design',
+              img : 'img/advantages-1.png',
+              text:'ПРОЕКТИРОВАНИе'
+            }, 
+            {
+              id: '#examination',
+              img:'img/advantages-2.png',
+              text:'Обследование'
+            }, 
+            {
+              id: '#thermal ',
+              img:'img/advantages-3.png',
+              text:'Тепловизионное Обследование'
+            }, 
+            {
+              id: '#design_projects',
+              img:'img/advantages-4.png',
+              text:'Дизайн проекты'
+            }, 
+            {
+              id: '#solar_panels',
+              img:'img/advantages-5.png',
+              text:'Солнечные батареи'
+            }, 
+            {
+              id: '#building',
+              img:'img/advantages-6.png',
+              text:'Строительство'
+            }
+          ]
+        each item in advantages
+          .col-mobile-1-1.col-phablet-1-2.col-desktop-1-3.col-desktop-full-1-6
+            a(href=item.id).advantages
               .advantages__img            
                 img(src=item.img, alt="")
-            .advantages__text=item.text 
+              .advantages__text=item.text 
 
