@@ -1,8 +1,8 @@
 .wrapper {
-    position: relative;
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 0 $gutter/2;
+  position: relative;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 $gutter/2;
 }
 
 .row{
@@ -31,13 +31,11 @@
     flex-basis: 50%;
     max-width: 50%;  
     min-width: 50%;
-    // text-align: center;
   }
    .col-phablet-1-1 {
     flex-basis: 100%;
     min-width: 100%;
     max-width: 100%;
-    // text-align: center;
   }
 }
 
@@ -46,26 +44,26 @@
     flex-basis: 33.33%;
     max-width: 33.33%;
     min-width: 33.33%;
-
-
   }
   .col-desktop-2-3 {  
     flex-basis: 66.66%;
     max-width: 66.66%;
     min-width: 66.66%;
-    // justify-content: space-between;
   }
-
   .col-1-2 { 
     flex-basis: 50%;
     max-width: 50%;
     min-width: 50%;
-    // justify-content: space-between;
-    // flex-wrap: nowrap;
-    // flex-direction: row;
   }
-
-
+  .col-1-2 { 
+    flex-basis: 50%;
+    max-width: 50%;
+    min-width: 50%;
+  }
+  .col-1-2 {
+    flex-basis: 50%;
+    max-width: 50%;
+  }
 }
 @include breakpoint (lg) {
   .col-desktop-48-100 {
@@ -82,8 +80,6 @@
     min-width: 52%;
     // justify-content: space-between;
   }
-}
-@include breakpoint (lg){
   .col-desktop-full-1-6{
     flex-basis: 16.66%;
     max-width: 16.66%;
