@@ -32,17 +32,21 @@ $('[data-fancybox="gallery-1"]').fancybox({
 });
 
   if($('#map').length){
-    var mapPosition = new google.maps.LatLng(-33.91722, 151.23064);
+    var mapPosition = new google.maps.LatLng(-23.91722, 151.23064);
 
     var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 8,
-          center: mapPosition,
-        });
+        zoom: 8,
+        center: mapPosition,
+      });
+    // var infowindow = new google.maps.InfoWindow({
+    //   content: contentString
+    // });
 
     var marker = new google.maps.Marker({
       position : mapPosition,
       icon : '../img/pointer-map.png',
-      map : map
+      map : map,
+      title: 'mapPosition (Ayers Rock)'   
     });
   }
 
