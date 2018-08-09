@@ -23,8 +23,11 @@
 } 
 .title.title-contacts{
   font-size: 19px;
-  text-align: left;
+  text-align: center;
   margin-bottom: 28px;
+  @include breakpoint (lg) {
+    text-align: left;
+  }
 }
 .article{
   text-align: left;

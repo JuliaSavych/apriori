@@ -21,8 +21,6 @@
     flex-basis: 100%;
     max-width: 100%;
     min-width: 100%;
-    // justify-content: center;
-    // padding: 20px 0;
   }
 }
 
@@ -67,18 +65,14 @@
 }
 @include breakpoint (lg) {
   .col-desktop-48-100 {
-    // padding: 10px;
     flex-basis: 48%;
     max-width: 48%;
     min-width: 48%;
-    // justify-content: space-between;
   }
    .col-desktop-52-100 {
-    // padding: 10px;
     flex-basis: 52%;
     max-width: 52%;
     min-width: 52%;
-    // justify-content: space-between;
   }
   .col-desktop-full-1-6{
     flex-basis: 16.66%;
