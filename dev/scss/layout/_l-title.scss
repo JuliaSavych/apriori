@@ -40,3 +40,10 @@
 .title.title_white {
   color: $white;
 }
+.title.title__contacts{
+  font-size: 41px;
+  z-index: 6;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
