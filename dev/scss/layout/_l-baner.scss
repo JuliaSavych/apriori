@@ -1,8 +1,10 @@
 .baner{
   text-align: center;
   background-image: url("../img/header-background.png");
+  background-size: cover;
   position: relative;
   height: 100vh;
+  max-height: 900px;
   padding-bottom: 50px;
   display: flex;
   align-items: flex-end;

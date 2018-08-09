@@ -64,15 +64,10 @@
   }
 }
 @include breakpoint (lg) {
-  .col-desktop-48-100 {
-    flex-basis: 48%;
-    max-width: 48%;
-    min-width: 48%;
-  }
-   .col-desktop-52-100 {
-    flex-basis: 52%;
-    max-width: 52%;
-    min-width: 52%;
+  .col-desktop-1-2 {
+    flex-basis: 50%;
+    max-width: 50%;
+    min-width: 50%;
   }
   .col-desktop-full-1-6{
     flex-basis: 16.66%;
