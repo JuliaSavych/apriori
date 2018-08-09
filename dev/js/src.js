@@ -52,6 +52,7 @@ $('[data-fancybox="gallery-1"]').fancybox({
 
 });
 
-window.onresize = function(event) {
-  $('.main-block').height();
-};
+window.addEventListener('resize', function(event){
+    var mainBlockHeigh = $('.main-block').height();
+    console.log(mainBlockHeigh);
+});

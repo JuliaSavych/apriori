@@ -1,6 +1,12 @@
 .advantages-block{
   z-index: 1;
 }
+.advantages-block_padding-left{
+  padding-left: 30px;
+}
+.advantages-block_padding-right{
+  padding-right: 30px;
+}
 .advantages-block-icons  {
   // display: inline-block;
   display: flex;
@@ -39,6 +45,7 @@
 }
 .advantages-block-icons.block-green{
     .advantages-icon{
+    transition: 0.3s all ease;
     background-color:$icon-bg-gren;
     &:hover{
       border: 3px solid $gren-hover;
@@ -58,6 +65,7 @@
 
 .advantages-block-icons.block-blue{
     .advantages-icon{
+    transition: 0.3s all ease;
     background-color:$icon-bg-blue;
     &:hover{
       border: 3px solid $blue-hover;

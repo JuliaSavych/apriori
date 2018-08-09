@@ -8,11 +8,11 @@
     content: '';
     background-color: $pink;
     height: 83px;
-    width: 690px;
+    width: 100vw;
     display: block;
     position: absolute; 
     top: -9px;
-    right: 100%;
+    right: 98%;
     z-index: 1;
   }
   &:after{
@@ -22,8 +22,8 @@
     top: 0px;
     background-color: $light-blue;
     height: 65px;
-    width: 1920px;
-    left: 100%;
+    width: 100vw;
+    left: 98%;
   }
   &__right{
     color: $text-dark;
