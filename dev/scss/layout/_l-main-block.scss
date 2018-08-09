@@ -1,6 +1,7 @@
 .main-block{
   overflow: hidden;
   position: relative;
+  height: 100vh;
   &__background{
     display: none;
     @include breakpoint(lg){

@@ -47,3 +47,7 @@ $('[data-fancybox="gallery-1"]').fancybox({
   }
 
 });
+
+window.onresize = function(event) {
+  $('.main-block').height();
+};
