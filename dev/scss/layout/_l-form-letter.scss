@@ -5,3 +5,167 @@
 		padding-top: 40px;
 	}
 }
+
+.form-letter {
+	&__title {
+		font-size: 19px;
+		font-weight: 700;
+		text-transform: uppercase;
+		color: $black;
+		position: relative;
+		padding-bottom: 15px;
+		margin-bottom: 20px;
+		&:after {
+			content: '';
+			position: absolute;
+			top: 100%;
+			left: 0;
+			right: 0;
+			height: 1px;
+			background-color: #dedede;
+		}
+	}
+}
+
+.form-letter__title_noline {
+	padding-bottom: 0;
+	&:after {
+		content: '';
+		height: 0;
+	}
+}
+
+#textarea {
+	width: 100%;
+	border: 1px solid #cfcfcf;
+	background-color: #dedede;
+	outline: none;
+	padding: 10px;
+	margin-bottom: 40px;
+} 
+
+#other {
+	width: 100%;
+	border: 1px solid #cfcfcf;
+	background-color: #dedede;
+	outline: none;
+	padding: 10px;
+	display: inline-block;
+}
+
+label{
+  position: relative;
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: $black;
+  input[type="radio"]{
+    position: absolute;
+    opacity: 0;
+    &:checked{
+    	& + span{
+    		&:before {
+    			content: '';
+	    		position: absolute;
+	    		top: 0;
+	    		left: 0;
+	    		right: 0;
+	    		bottom: 0;
+	    		width: 13px;
+	    		height: 7px;
+	    		margin: auto;
+	    		border-left: 1px solid $black;
+	    		border-bottom: 1px solid $black;
+	    		transform: rotate(-45deg);
+	    	}	
+	    }
+    }
+  }
+  input[type="number"] {
+  	position: relative;
+    display: inline-block;
+    vertical-align: middle;
+	width: 75px;
+    height: 40px;
+    border: 1px solid #cfcfcf;
+    background-color: #dedede;
+    cursor: pointer;
+    margin-right: 20px;
+  }
+  span{
+  	position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #cfcfcf;
+    background-color: #dedede;
+    cursor: pointer;
+    margin-right: 20px;
+  }
+  input {
+  	padding: 10px;
+  }
+}
+
+form {
+	&>.wrap{
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 40px;
+	}
+}
+
+.form {
+	display: flex;
+	justify-content: space-between;
+		@include breakpoint(xs) {
+			justify-content: center;
+			flex-direction: column;
+		}
+		@include breakpoint(sm) {
+			justify-content: space-around;
+			flex-wrap: wrap;
+		}
+		@include breakpoint(md) {
+			align-items: center;
+			flex-wrap: nowrap;
+		}
+	input {
+		width: 100%;
+		padding-left: 17px;
+		font-size: 22px;
+		font-weight: 400;
+		font-family: $main-font-family, sans-serif;
+		background: $white;
+		border: 1px solid $form-border-color;
+		height: 49px;
+		margin-right: 45px;
+		color: #c0c0c0;
+		@include breakpoint(xs) {
+			margin-right: 0;
+			margin-bottom: 15px;
+		}
+		@include breakpoint(sm) {
+			margin-right: 0;
+			margin-bottom: 15px;
+		}
+		@include breakpoint(md) {
+			margin-bottom: 0;
+			margin-right: 15px;
+		}
+
+	}
+	button {
+		background-color: $gren;
+		text-transform: uppercase;
+		border: 1px solid $form-border-color;
+		text-align: center;
+		font-size: 24px;
+		font-family: $main-font-family, sans-serif;
+		color: $white;
+		height: 66px;
+		width: 100%;
+		cursor: pointer;
+	}
+}
