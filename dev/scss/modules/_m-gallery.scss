@@ -7,7 +7,11 @@
 	}
 	a {
 		// flex-basis: 25%;
+		display: block;
 		margin-bottom: 25px;
+		img {
+			max-width: 100%;
+		}
 	}
 }
 
