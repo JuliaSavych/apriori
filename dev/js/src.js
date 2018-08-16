@@ -1,5 +1,4 @@
-$( document ).ready(function() {
-    
+$( document ).ready(function() {  
   var advantages_block = $('.advantages'); 
   if(advantages_block.length){
     $('.advantages a').click(function(event) {
@@ -12,6 +11,7 @@ $( document ).ready(function() {
       $("html, body").animate({scrollTop : pos}, 700);
     });
   }
+});
 
 $('[data-fancybox="gallery-1"]').fancybox({
    thumbs : {
@@ -31,6 +31,7 @@ $('[data-fancybox="gallery-1"]').fancybox({
     ]
 });
 
+function initMap() {
   if($('#map').length){
     var mapPosition = new google.maps.LatLng(-23.91722, 151.23064);
 
@@ -49,8 +50,7 @@ $('[data-fancybox="gallery-1"]').fancybox({
       title: 'mapPosition (Ayers Rock)'   
     });
   }
-
-});
+}
 
 window.addEventListener('resize', function(event){
     var mainBlockHeigh = $('.main-block').height();
